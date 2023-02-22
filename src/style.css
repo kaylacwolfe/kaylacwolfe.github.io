@@ -1,0 +1,31 @@
+iframe {
+    margin-right: auto;
+    margin-left: auto;
+    border: 5px solid #FFD700
+}
+
+.logo {
+    float: left;
+    margin-left: 50px;
+    width: 120px;
+}
+
+.csuLogo {
+    float: right;
+    width: 30px;
+    margin-top: 7px;
+    margin-right: 5px;
+}
+
+body{
+    color: whitesmoke;
+}
+
+header {
+    color: whitesmoke;
+    font-family:Georgia, serif
+}
+
+html{
+    background-color: #355E3B;
+}
