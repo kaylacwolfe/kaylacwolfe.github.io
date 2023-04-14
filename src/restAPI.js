@@ -7,6 +7,6 @@ async function getTime(){
     throw new Error(`Error! status: ${response.status}`);}
   const myJson = await response.json();}
   catch (err) {
-    console.log(err);}}
+    console.log(err);}
   console.info(myJson);
 }
