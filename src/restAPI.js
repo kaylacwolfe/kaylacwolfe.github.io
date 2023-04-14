@@ -5,6 +5,8 @@ async function getTime(){
     headers: {accept: 'application/json'}, });
   if (!response.ok) {
     throw new Error(`Error! status: ${response.status}`);}
-  const myJson = await response.json();
+  const myJson = await response.json();}
+  catch (err) {
+    console.log(err);}}
   console.info(myJson);
 }
