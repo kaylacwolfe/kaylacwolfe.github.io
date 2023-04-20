@@ -60,7 +60,7 @@
         
     document.querySelector('#action').addEventListener('click', function(){
         var text = document.getElementById("action").textContent;
-        if(text == "Start Tracking"){
+        if(text == "Track Route 31"){
             pubnub.subscribe({channels: [pnChannel]});
             pubnub.addListener({message:redraw});
             document.getElementById("action").classList.add('btn-danger');
@@ -71,7 +71,7 @@
             pubnub.unsubscribe( {channels: [pnChannel] });
             document.getElementById("action").classList.remove('btn-danger');
             document.getElementById("action").classList.add('btn-success');
-            document.getElementById("action").textContent = 'Start Tracking';
+            document.getElementById("action").textContent = 'Track Route 31';
         }
         });
     </script>
