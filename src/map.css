@@ -4,6 +4,10 @@ body, html {
 .logo {
   width: 20%;
 }
+button {
+  color: #355E3B;
+  font-family: serif;
+}
 .bg {
   background-image: url(../images/CAM-the-ram.jpg);
   filter: blur(1px);
