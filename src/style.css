@@ -19,6 +19,7 @@ iframe {
 
 body{
     color: whitesmoke;
+    height: 100%;
 }
 
 header {
@@ -28,4 +29,39 @@ header {
 
 html{
     background-color: #355E3B;
+    height: 100%;
 }
+
+.bg {
+    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fcsulife.source.colostate.edu%2Fa-day-in-the-life-of-cam-the-ram%2F&psig=AOvVaw2JOcq8z9besCXx9S9ZeVEb&ust=1682096958487000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLi_qM_5uP4CFQAAAAAdAAAAABAE');
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  .bg-others {
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.4); 
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+  }
+  .hr1{
+     color: white; 
+  }
+  #map-canvas{
+      width:720px;
+      height:400px;
+      border: 6px solid #FFD700;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
