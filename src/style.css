@@ -33,7 +33,7 @@ html{
 }
 
 .bg {
-    background-image: url('https://csulife.source.colostate.edu/wp-content/uploads/sites/10/2021/10/CAM-the-ram.jpg');
+    background-image: '../images/CAM-the-ram.jpg';
     filter: blur(1px);
     -webkit-filter: blur(1px);
     height: 100%;
