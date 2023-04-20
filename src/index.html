@@ -1,29 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <title>Transit Tracker</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <meta name="author" content="Kayla Wolfe, Ashley Slater, Kyler Lacewell, Matt West, Jennah Vigil, Hannah Friebel">
-        <meta name="description" content="Tracking route 31 for students and staff to ride the bus easily.">
-        <meta name="keywords" content="HTML,CSS,JavaScript">
-        <link rel="stylesheet" href="./style.css" type="text/css"/>
-        <script src="restAPI.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    </head>
-
-    <header>
-        <div class="header">
-            <h4 style="float:right; margin-top:12px;">Colorado State University</h4>
-            <img class="csuLogo" src="../images/csuRamLogo.png" alt="csuRamLogo">
-            <img class="logo" src="../images/busLogo.png" alt="logo">
-            <h1><b>Transit Tracker</b></h1>
-        </div>
-    </header>
-    <body>
-        <div class="bg"></div>
+  <head>
+    <title>Realtime GPS Tracker</title>
+    <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.19.0.min.js"></script>
+    <link rel="stylesheet" href="map.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </head>
+  <body>
+      <div class="bg"></div>
      <div class="bg-others"> 
     <div class="container">
+      <h1 >Realtime GPS Tracker with Raspberry PI</h1>
+        <center><hr style="height:2px; border:none; color:#ffffff; background-color:#ffffff; width:35%; margin: 0 auto 0 auto;"></center>
+        <p>by SPARKLERS: We Are The Makers</p>  
         <center><button class="btn btn-success col-sm-3" id="action">Start Tracking</button></center><br>
         <center><div id="map-canvas"></div></center>
     </div>
@@ -88,5 +78,5 @@
         });
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBM1uxnJax3RSpO69sGxG8HYIZXnneXKyw&callback=initialize"></script>
-    </body>
+  </body>
 </html>
