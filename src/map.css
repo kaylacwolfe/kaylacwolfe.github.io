@@ -3,7 +3,7 @@ body, html {
 }
 .bg {
   /* The image used */
-  background-color: green;
+  background-image: url(../images/CAM-the-ram.jpg);
   filter: blur(1px);
   -webkit-filter: blur(1px);
   /* Full height */
