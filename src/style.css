@@ -26,7 +26,7 @@ html{
 }
 
 .bg {
-    background-image: '../images/CAM-the-ram.jpg';
+    background-image: 'https://i.ytimg.com/vi/setCfWjrAsI/maxresdefault.jpg';
     filter: blur(1px);
     -webkit-filter: blur(1px);
     height: 100%;
