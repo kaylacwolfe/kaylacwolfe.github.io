@@ -18,11 +18,13 @@ body, html {
 
 .nav:hover span {
   background-color: #FFD700;
+  text-align: left;
 }
 
 .nav span {
   padding: 10px;
   background-color: #355E3B;
+  text-align: left;
 }
 
 button {
