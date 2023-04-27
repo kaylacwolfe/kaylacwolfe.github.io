@@ -29,7 +29,7 @@
     var lineCoords = [];
       
     var initialize = function() {
-      map  = new google.maps.Map(document.getElementById('map-canvas'), {center:{lat:lat,lng:lng},zoom:12});
+      map  = new google.maps.Map(document.getElementById('map-canvas'), {center:{lat:lat,lng:lng},zoom:15});
       mark = new google.maps.Marker({position:{lat:lat, lng:lng}, map:map});
     };
 
@@ -79,5 +79,16 @@
         });
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBM1uxnJax3RSpO69sGxG8HYIZXnneXKyw&callback=initialize"></script>
+    <script>
+      function newPoint(time) {
+            var radius = 0.001;
+            var x = Math.random() * radius;
+            var y = Math.random() * radius;
+            return {lat:window.lat - y, lng:window.lng + x};
+              }
+            setInterval(function() {
+            pubnub.publish({channel:pnChannel, message:newPoint()});
+            }, 1000);
+    </script>
   </body>
 </html>
