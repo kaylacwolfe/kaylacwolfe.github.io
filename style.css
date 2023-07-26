@@ -47,3 +47,7 @@ li img {
     display: inline;
     padding-top: 6px;
 }
+
+a:hover img{
+    text-decoration: none;
+}
