@@ -2,7 +2,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #d1f3c8;
+    background-color: #CAFFD0;
     overflow: hidden;
 }
 
@@ -17,37 +17,35 @@ a, a:visited {
     padding: 10px;
     padding-right: 40px;
     padding-left: 40px;
-    background-color: #d1f3c8;
+    background-color: #CAFFD0;
     text-decoration: none;
     color: black;
     font-size: larger;
     font-family: 'Courier New', Courier, monospace;
 }
 
-a:hover {
+.hoverover a:hover {
     color: white;
-    background-color: #98c28e;
+    background-color: #B4A0E5;
 }
 .nohover {
     text-decoration: none;
 }
 
 .navbar {
-    background-color: #d1f3c8;
-}
-
-h1 {
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
+    background-color: #CAFFD0;
 }
 
 li img {
-    width:6%;
-    float: right;
-    display: inline;
-    padding-top: 6px;
+    width: 30px;
+    display: inline-block;
 }
 
 a:hover img{
-    text-decoration: none;
+    width: 33px;
+}
+
+.logo {
+    padding-top: 210px;
+    padding-left: 70px;
 }
