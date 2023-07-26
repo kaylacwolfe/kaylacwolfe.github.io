@@ -28,6 +28,9 @@ a:hover {
     color: white;
     background-color: #98c28e;
 }
+.nohover {
+    text-decoration: none;
+}
 
 .navbar {
     background-color: #d1f3c8;
