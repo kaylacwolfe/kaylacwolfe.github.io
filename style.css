@@ -65,3 +65,16 @@ a:hover img{
 #next {
     display: inline;
 }
+
+.softeng {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10%;
+    width: 50%;
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
