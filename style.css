@@ -65,3 +65,21 @@ a:hover img{
 #next {
     display: inline;
 }
+
+.softeng {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10%;
+    width: 50%;
+}
+
+h1 {
+    font-family: 'Handjet', cursive;   
+    text-align: center;
+    color: #CAFFD0;
+    font-size: 5vw;
+    text-shadow: 1px 1px 2px #CA3CFF, 0 0 1em #CA3CFF, 0 0 0.3em #CA3CFF;
+}
+
+
