@@ -14,7 +14,9 @@ function sendEmail(){
         To : 'kaylacwolfe@icloud.com',
         From : 'kaylacwolfe@icloud.com',
         Subject : "An Email From Your Site",
-        Body : document.getElementById("message").value
+        Body : "FROM: " + document.getElementById("first").value + " " + document.getElementById("last").value +
+                "<br> EMAIL: " + document.getElementById("email").value + 
+                "<br> MESSAGE: " + document.getElementById("message").value
     }).then(
       message => alert('Sent Successfully!')
     );
