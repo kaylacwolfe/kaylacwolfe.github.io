@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="home.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@600&family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
@@ -82,20 +84,23 @@
         <i onclick="document.getElementById('contact').style.display='none'" class="fa fa-remove transparent button xlarge right"></i>
         <h1 class="wide" style="text-align: left;">Contact Me</h1>
         <h4>Or you can email me at: <a href = "mailto: kaylacwolfe@icloud.com" class="email">kaylacwolfe@icloud.com</a></h4>
-        <div class="form">
-          <label for="firstname">Last Name</label>
-          <input class="input border" type="text" placeholder="Jane">
-        </div>
-        <div class="form">
-          <label for="lastname">Last Name</label>
-          <input class="input border" type="text" placeholder="Doe">
-        </div>
-        <label for="email">E-mail</label>
-        <input class="input border" type="text" placeholder="janedoe@example.com">
-        <label for="message">Message</label>
-        <textarea id="message" class="input border" placeholder="Write something..." style="height:200px"></textarea>
+        <form onsubmit="sendEmail(); reset(); return false;">
+          <div class="form">
+            <label for="firstname" required>First Name</label>
+            <input class="input border" type="text" name="first" placeholder="Jane"/>
+          </div>
+          <div class="form">
+            <label for="lastname">Last Name</label>
+            <input class="input border" type="text" name="last" placeholder="Doe" required/>
+          </div>
+          <label for="email">E-mail</label>
+          <input class="input border" type="email" name="email" placeholder="janedoe@example.com" required/>
+          <label for="message">Message</label>
+          <textarea class="input border" id="message" cols="30" rows="10" placeholder="Write something..." required></textarea>
+          <br>
+          <button type="submit" class="button block margin-bottom">Send</button>
+        </form>
         <br>
-        <button type="button" class="button block margin-bottom" onclick="document.getElementById('contact').style.display='none'">Send</button>
       </div>
     </div>
   </div>
