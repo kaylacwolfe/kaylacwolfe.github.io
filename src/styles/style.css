@@ -1,5 +1,5 @@
 html{
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
 html,body{
@@ -8,12 +8,12 @@ html,body{
     font-size: 15px;
 }
 
-body{
-    margin: 0;
+div{
+    position: relative;
 }
 
-*,*:before,*:after{
-    box-sizing:inherit;
+body{
+    margin: 0;
 }
 
 footer,header{
@@ -34,7 +34,8 @@ h2{
 }
 
 h3{
-    font-size:24px;
+    font-size: 24px;
+    margin-top: 24px;
 }
 
 h4{
@@ -63,15 +64,6 @@ img{
     vertical-align:middle;
 }
 
-hr{
-    box-sizing:content-box;
-    height:0;
-    overflow:visible;
-    border:0;
-    border-top:1px solid #eee;margin:20px 0
-}
-
-
 a, a:visited {
     display: block;
     padding: 10px;
@@ -93,7 +85,6 @@ button, input, textarea{
     width:100%;
     overflow:hidden;
     background-color: #CAFFD0;
-    position:fixed;
 }
 
 .bar-item{
@@ -124,12 +115,14 @@ button, input, textarea{
 
 .button:disabled{
     cursor:not-allowed;
-    opacity:0.3
+    opacity:0.3;
+    background-color: #B4A0E5;
 }
 
 .button:hover{
     background-color: #CA3CFF;
     color: white;
+    text-decoration: none;
 }
 
 .right{
@@ -140,6 +133,7 @@ button, input, textarea{
     margin-left:auto;
     margin-right:auto;
     max-width:980px;
+
 }
 
 .center{
@@ -147,19 +141,17 @@ button, input, textarea{
     text-align: center !important;
 }
 
-.container{
-    padding:0.01em 16px;
-}
+
 
 .padding-48{
-    padding-top:48px!important;
-    padding-bottom:48px!important;
+    padding-top: 48px!important;
+    padding-bottom: 48px!important;
 }
 
 .row:after,.row:before{
-    content:"";
-    display: table;
+    content: "";
     clear: both;
+    flex-wrap: wrap;
 }
 
 .padding{
@@ -167,82 +159,77 @@ button, input, textarea{
 }
 
 .col{
-    float:left;
+    float: left;
     width: 100%;
     padding:0 8px;
 }
 
-.col.l8{
-    width:66.66666%;
-}
-
 .col.l4{
-    width:33.33333%;
-}
-
-
-.margin{
-    margin:16px!important;
+    width: 33.33333%;
 }
 
 .padding-large{
-    padding:12px 24px!important;
+    padding: 12px 24px!important;
 }
 
 .justify{
-    text-align:justify!important;
+    text-align: justify!important;
 }
 
 .margin-bottom{
-    margin-bottom:16px!important;
+    margin-bottom: 16px!important;
 }
 
 .block{
-    display:block;
-    width:100%;
+    display: block;
+    width: 100%;
 }
 
 .white{
-    color:#000!important;
-    background-color:#fff!important;
+    color: #000!important;
+    background-color: #fff!important;
 }
 
 .modal{
-    z-index:3;
-    display:none;
-    padding-top:100px;
-    position:fixed;
-    left:0;
-    top:0;
-    width:100%;
-    height:100%;
-    overflow:auto;
-    background-color:rgb(0,0,0);
-    background-color:rgba(0,0,0,0.4);
+    z-index: 3;
+    display: none;
+    padding-top: 5%!important;
+    padding-bottom: 5%!important;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%!important;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
 }
 
 .modal-content{
-    margin:auto;background-color:#fff;
-    position:relative;
-    padding:0;
-    outline:0;
-    width:800px;
+    margin: auto;
+    background-color: #fff;
+    position: relative;
+    padding: 0;
+    outline: 0;
+    width: 60%!important;
+    min-width: 300px!important;
+    min-height: 200px!important;
 }
 
 .animate-opacity{
-    animation:opac 0.8s;
+    animation: opac 0.8s;
 }@keyframes opac{from{opacity:0} to{opacity:1}}
 
 .transparent{
-    background-color:transparent!important;
+    background-color: transparent!important;
 }
 
 .xlarge{
-    font-size:24px!important;
+    font-size: 24px!important;
 }
 
 .wide{
-    letter-spacing:4px;
+    letter-spacing: 4px;
 }
 
 .email{
@@ -259,9 +246,9 @@ button, input, textarea{
 }
 
 .input{
-    padding:8px;
-    display:block;
-    width:100%;
+    padding: 8px;
+    display: block;
+    width: 100%;
 }
 
 .form{
@@ -270,14 +257,14 @@ button, input, textarea{
 }
 
 .border{
-    border:1px solid #ccc!important
+    border: 1px solid #ccc!important
 }
 
 .black,.hover-black:hover{
-    color:#fff!important;
-    background-color:#000!important;
+    color: #fff!important;
+    background-color: #000!important;
 }
 
 .margin-right{
-    margin-right:16px!important;
+    margin-right: 16px!important;
 }
