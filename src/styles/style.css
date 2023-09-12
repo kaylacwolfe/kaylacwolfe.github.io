@@ -113,6 +113,21 @@ button, input, textarea{
     background-color: #B4A0E5;
 }
 
+.bar-button{
+    user-select:none;
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap;
+}
+
 .button:disabled{
     cursor:not-allowed;
     opacity:0.3;
