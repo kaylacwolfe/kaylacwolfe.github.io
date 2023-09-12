@@ -134,7 +134,7 @@ button, input, textarea{
     background-color: #B4A0E5;
 }
 
-.button:hover{
+.button:hover, .bar-button:hover{
     background-color: #CA3CFF;
     color: white;
     text-decoration: none;
