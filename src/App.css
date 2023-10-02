@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@600&family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open Sans');
+@import url('https://fonts.googleapis.com');
+
+html{
+  box-sizing: border-box;
+}
+
+html,body{
+  line-height:1.5;
+  -webkit-text-size-adjust: 100%;
+  font-size: 15px;
+}
+
+div{
+  position: relative;
+}
+
+body{
+  margin: 0;
+}
+
+footer,header{
+  display:block;
+}
+
+h1 {
+  font-family: 'Handjet', cursive;   
+  color: #CAFFD0 !important;
+  text-shadow: 1px 1px 2px #CA3CFF, 0 0 1em #CA3CFF, 0 0 0.3em #CA3CFF;
+  font-size:36px;
+  font-weight:400;
+  margin:10px 0;
+}
+
+h2{
+  font-size:30px;
+}
+
+h3{
+  font-size: 24px;
+  margin-top: 24px;
+}
+
+h4{
+  font-size:20px;
+}
+
+h5{
+  font-size:18px;
+}
+
+h6{
+  font-size:16px;
+}
+
+a{
+  background-color:transparent;
+  color:inherit;
+}
+
+a:active,a:hover{
+  outline-width:0;
+}
+
+img{
+  border-style:none;
+  vertical-align:middle;
+}
+
+a, a:visited {
+  display: block;
+  padding: 10px;
+  padding-right: 40px;
+  padding-left: 40px;
+  background-color: #CAFFD0;
+  text-decoration: none;
+  color: black;
+  font-size: larger;
+}
+
+button, input, textarea{
+  font:inherit;
+  margin:0;
+  overflow: visible;
+}
+
+.bar{
+  width:100%;
+  overflow:hidden;
+  background-color: #CAFFD0;
+}
+
+.bar-item{
+  padding:8px 16px;
+  float:left;
+  width:auto;
+  border:none;
+  display:block;
+  outline:0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.button, .x{
+  user-select:none;
+  border:none;
+  display:inline-block;
+  padding:8px 16px;
+  vertical-align:middle;
+  overflow:hidden;
+  text-decoration:none;
+  color:inherit;
+  background-color:inherit;
+  text-align:center;
+  cursor:pointer;
+  white-space:nowrap;
+}
+
+.button{
+  background-color: #B4A0E5;
+}
+
+.bar-button{
+  user-select:none;
+  border:none;
+  display:inline-block;
+  padding:8px 16px;
+  vertical-align:middle;
+  overflow:hidden;
+  text-decoration:none;
+  color:inherit;
+  background-color:inherit;
+  text-align:center;
+  cursor:pointer;
+  white-space:nowrap;
+}
+
+.button:disabled{
+  cursor:not-allowed;
+  opacity:0.3;
+  background-color: #B4A0E5;
+}
+
+.button:hover, .bar-button:hover{
+  background-color: #CA3CFF;
+  color: white;
+  text-decoration: none;
+}
+
+.right{
+  float:right!important;
+}
+
+.content{
+  margin-left:auto;
+  margin-right:auto;
+  max-width:980px;
+
+}
+
+.center{
+  width:auto;
+  text-align: center !important;
+}
+
+.padding-48{
+  padding-top: 48px!important;
+  padding-bottom: 48px!important;
+}
+
+.row:after,.row:before{
+  content: "";
+  clear: both;
+  flex-wrap: wrap;
+}
+
+.padding{
+  padding:8px 16px!important;
+}
+
+.col{
+  float: left;
+  width: 100%;
+  padding:0 8px;
+}
+
+.col.l4{
+  width: 33.33333%;
+}
+
+.padding-large{
+  padding: 12px 24px!important;
+}
+
+.justify{
+  text-align: justify!important;
+}
+
+.margin-bottom{
+  margin-bottom: 16px!important;
+}
+
+.block{
+  display: block;
+  width: 100%;
+}
+
+.white{
+  color: #000!important;
+  background-color: #fff!important;
+}
+
+.modal{
+  z-index: 3;
+  display: none;
+  padding-top: 5%!important;
+  padding-bottom: 5%!important;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%!important;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content{
+  margin: auto;
+  background-color: #fff;
+  position: relative;
+  padding: 0;
+  outline: 0;
+  width: 60%!important;
+  min-width: 300px!important;
+  min-height: 200px!important;
+}
+
+.animate-opacity{
+  animation: opac 0.8s;
+}@keyframes opac{from{opacity:0} to{opacity:1}}
+
+.transparent{
+  background-color: transparent!important;
+}
+
+.xlarge{
+  font-size: 24px!important;
+}
+
+.wide{
+  letter-spacing: 4px;
+}
+
+.email{
+  background-color: transparent!important;
+  font-size: 20px!important;
+  text-decoration: underline;
+  display: inline;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.email:hover{
+  color: #B4A0E5;
+}
+
+.input{
+  padding: 8px;
+  display: block;
+  width: 100%;
+}
+
+.form{
+  display: inline-block;
+  width: 49%;
+}
+
+.border{
+  border: 1px solid #ccc!important
+}
+
+.black,.hover-black:hover{
+  color: #fff!important;
+  background-color: #000!important;
+}
+
+.margin-right{
+  margin-right: 16px!important;
+}
