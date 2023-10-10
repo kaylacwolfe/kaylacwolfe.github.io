@@ -36,80 +36,81 @@
         <h1 class="fancy">Software Engineer</h1>
       </header>
       <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-8">
-          <div class="container margin-bottom padding-large" style="background-color: #B4A0E5;">
-            <div class="center">
-              <h3><strong>My Resume</strong></h3>
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="container margin-bottom padding-large" style="background-color: #B4A0E5;">
+              <div class="center">
+                <h3><strong>My Resume</strong></h3>
+              </div>
+              <div class="justify">
+                <p>Email: KaylaCWolfe@icloud.com</p>
+                <p>Phone: 303-514-3654</p>
+                <h4>Skills</h4>
+                <ul>
+                  <li>Comfortable with Linux, OS X, and Microsoft</li>
+                  <li>Java, HTML, CSS, Python, C, C++, Javascript, PHP, Assembly</li>
+                  <li>ReactJS, Bootstrap, jQuery</li>
+                  <li>SQL (postreSQL)</li>
+                  <li>Git</li>
+                  <li>REST APIs</li>
+                </ul>
+              <div class="row margin-bottom" style="display:none"></div>
             </div>
-          <div class="justify">
-            <p>Email: KaylaCWolfe@icloud.com</p>
-            <p>Phone: 303-514-3654</p>
-            <h4>Skills</h4>
-            <ul>
-              <li>Comfortable with Linux, OS X, and Microsoft</li>
-              <li>Java, HTML, CSS, Python, C, C++, Javascript, PHP, Assembly</li>
-              <li>ReactJS, Bootstrap, jQuery</li>
-              <li>SQL (postreSQL)</li>
-              <li>Git</li>
-              <li>REST APIs</li>
-            </ul>
-            <div class="row margin-bottom" style="display:none"></div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="white margin-bottom">
+            <img src="./src/images/kaylaProfile.png" alt="KaylaWolfe" style="width:100%">
+            <div class="container-fluid padding" style="background-color: #CAFFD0;">
+              <h3>About Me</h3>
+              <p>
+                Hi! My name is Kayla Wolfe and I am currently a senior at Colorado State University
+                getting my bachelor's in Computer Science with a concentration in Software Engineering.
+                I am originally from Evergreen, Colorado which is a small mountain town just an 
+                hour west of Denver. My time at CSU has been nothing but memorable, in the classes I 
+                took and the things I learned. For 2 years, I was a Teaching Assistant for Introduction
+                to Computing: Java Programming where I taught students seeing code for the very first 
+                time, how to solve problems using Java.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="container-fluid">
+              <p><button type="button" onclick="openModal()" class="button block">Contact Me</button></p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-sm-4">
-        <div class="white margin-bottom">
-          <img src="./src/images/kaylaProfile.png" alt="KaylaWolfe" style="width:100%">
-          <div class="container-fluid padding" style="background-color: #CAFFD0;">
-            <h3>About Me</h3>
-            <p>
-              Hi! My name is Kayla Wolfe and I am currently a senior at Colorado State University
-              getting my bachelor's in Computer Science with a concentration in Software Engineering.
-              I am originally from Evergreen, Colorado which is a small mountain town just an 
-              hour west of Denver. My time at CSU has been nothing but memorable, in the classes I 
-              took and the things I learned. For 2 years, I was a Teaching Assistant for Introduction
-              to Computing: Java Programming where I taught students seeing code for the very first 
-              time, how to solve problems using Java.
-            </p>
-          </div>
-        </div>
-        <div>
-          <div class="container-fluid">
-            <p><button type="button" onclick="openModal()" class="button block">Contact Me</button></p>
+      <div id="contact" class="modal animate-opacity">
+        <div class="modal-content" style="padding:32px;">
+          <div class="container white">
+            <i onclick="closeModal()" class="fa fa-remove transparent button xlarge right"></i>
+            <h1 class="wide" style="text-align: left;">Contact Me</h1>
+            <h4>Or you can email me at: <a href = "mailto: kaylacwolfe@icloud.com" class="email">kaylacwolfe@icloud.com</a></h4>
+            <form onsubmit="sendEmail(); closeModal(); return false;">
+              <div class="form">
+                <label for="firstname" required>First Name</label>
+                <input class="input border" type="text" id="first" placeholder="Jane"/>
+              </div>
+              <div class="form">
+                <label for="lastname">Last Name</label>
+                <input class="input border" type="text" id="last" placeholder="Doe" required/>
+              </div>
+              <br>
+              <label for="email">E-mail</label>
+              <input class="input border" type="email" id="email" placeholder="janedoe@example.com" required/>
+              <label for="message">Message</label>
+              <textarea class="input border" id="message" placeholder="Write something..." required></textarea>
+              <br>
+              <button type="submit" class="button block margin-bottom">Send</button>
+            </form>
+            <br>
           </div>
         </div>
       </div>
+      <footer class="container-fluid" style="margin-left: 0!important;">
+        <a href="#" class="button padding-large margin-bottom"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
+      </footer>
     </div>
-  <div id="contact" class="modal animate-opacity">
-    <div class="modal-content" style="padding:32px;">
-      <div class="container white">
-        <i onclick="closeModal()" class="fa fa-remove transparent button xlarge right"></i>
-        <h1 class="wide" style="text-align: left;">Contact Me</h1>
-        <h4>Or you can email me at: <a href = "mailto: kaylacwolfe@icloud.com" class="email">kaylacwolfe@icloud.com</a></h4>
-        <form onsubmit="sendEmail(); closeModal(); return false;">
-          <div class="form">
-            <label for="firstname" required>First Name</label>
-            <input class="input border" type="text" id="first" placeholder="Jane"/>
-          </div>
-          <div class="form">
-            <label for="lastname">Last Name</label>
-            <input class="input border" type="text" id="last" placeholder="Doe" required/>
-          </div>
-          <br>
-          <label for="email">E-mail</label>
-          <input class="input border" type="email" id="email" placeholder="janedoe@example.com" required/>
-          <label for="message">Message</label>
-          <textarea class="input border" id="message" placeholder="Write something..." required></textarea>
-          <br>
-          <button type="submit" class="button block margin-bottom">Send</button>
-        </form>
-        <br>
-      </div>
-    </div>
-  </div>
-  <footer class="container-fluid" style="margin-left: 0!important;">
-    <a href="#" class="button padding-large margin-bottom"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
-  </footer>
-</body>
+  </body>
 </html>
