@@ -32,7 +32,7 @@ button {
   font-family: serif;
 }
 .bg {
-  background-image: url(../images/CAM-the-ram.jpg);
+  background-image: url(./images/CAM-the-ram.jpg);
   background-attachment: fixed;
   height: 100%;
   background-position: center;

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kayla's Plants</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="author" content="Kayla Wolfe"/>
+        <meta name="description" content="Plant Products"/>
+        <meta name="keywords" content="HTML,CSS,JavaScript"/>
+        <link rel="stylesheet" href="./style.css" type="text/css"/>
+        <link rel="icon" type="image/x-icon" href="./favicon.png" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="product.js"></script>
+    </head>
+    <header>
+            <button class="button" onclick="window.location.href='../src/work.html'">GO BACK</button>
+            <img src="./logo.png" alt="logo" id="logo-img"/>
+    </header>
+    <body style="background-color:#c4d9bc;">
+        <div style="margin-bottom: 10px;">
+            <div id="image">
+                <img id="product-terr" src="./terracotta.png" alt="monsteraPlant"/>
+            </div>
+            <div id="child-div">
+                <h1>Monstera Deliciosa</h1>
+                <p><b><big>
+                    The Monstera Deliciosa is one of the most <span style="color:#DF964A;">well-known</span> plants 
+                    in the community. It is <span style="color:#DF964A;">very easy to take care of</span>, as it can handle multiple different lighting 
+                    conditions and lack of water. They also <span style="color:#DF964A;">grow quite large</span>, and the bigger they get the more 
+                    fenestrations they have. This specific variety has an all green leaf but other more rare types of 
+                    Monstera Deliciosa can have <span style="color:#DF964A;">variagation</span>.
+                </big></b></p>
+                <div>
+                    <div style="display:inline-block; margin-right:300px;">
+                        <p id="description" style="margin-top:50px;">
+                            <b>Height: 2'6"</b>
+                        </p>
+                        <p id="description">
+                            <b>Pot Size: 8"</b>
+                        </p>
+                        <p id="description" class="button">
+                            <b>Pot Color:</b> 
+                            <button class="terracotta">Terracotta</button>
+                            <button class="white">White</button>
+                            <button class="black">Black</button>
+                        </p>
+                        <br>
+                        <br>
+                        <span id="description" class="color">
+                            <p id="color-terr">
+                                <u>Color Pictured: Terracotta</u>
+                            </p>
+                        </span>
+                    </div>
+                    <div style="display:inline-block">
+                        <button class="button">BUY NOW</button>
+                        <p id="description" style="padding-bottom:300px;">
+                            $30 + Shipping and Handling
+                        </p>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </body>
+    <footer>
+        <b>*Part of a CS312 web design project.  Product not actually for sale*</b>
+    </footer>
+    <script>
+        $(document).ready(function(){
+            $(".white").click(() => {
+                $(".about").load("plantpot.html #product-white");
+            });
+            $(".black").click(() => {
+                $("#image").load("plantpot.html #product-black");
+            });
+            $(".terracotta").click(() => {
+                $("#image").load("plantpot.html #product-terr");
+            });
+        });
+    </script>
+</html>
