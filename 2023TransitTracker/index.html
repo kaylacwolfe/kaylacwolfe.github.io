@@ -4,7 +4,7 @@
     <title>Transit Tracker</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="map.css">
-    <link rel="icon" type="image/x-icon" href="../images/Transit__1_-removebg-preview.png">
+    <link rel="icon" type="image/x-icon" href="./images/Transit__1_-removebg-preview.png">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.19.0.min.js"></script>
@@ -12,9 +12,10 @@
   <body>
       <div class="bg"></div>
       <div class="bg-others"> 
+        <button class="btn" onclick="window.location.href='../src/work.html'">Back</button>
         <div class="cont">
           <a href="./about.html" class="nav"><span>About</span></a>
-          <img src="../images/Transit-removebg-preview.png" alt="logo" class="logo">
+          <img src="./images/Transit-removebg-preview.png" alt="logo" class="logo">
           <center><button class="btn btn-success col-sm-3" id="action">Track Route 31</button></center><br>
           <center><div id="map-canvas"></div></center>
         </div>
@@ -78,14 +79,14 @@
         }
         });
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBM1uxnJax3RSpO69sGxG8HYIZXnneXKyw&callback=initialize"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyB9vWVFeaBBoa431SR6GGTqEorK6qDppUk&callback=initialize"></script>
     <script>
       function newPoint(time) {
             var radius = 0.001;
             var x = Math.random() * radius;
             var y = Math.random() * radius;
             return {lat:window.lat - y, lng:window.lng + x};
-              }
+      }
             setInterval(function() {
             pubnub.publish({channel:pnChannel, message:newPoint()});
             }, 1000);

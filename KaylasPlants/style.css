@@ -1,0 +1,50 @@
+#logo-img{
+    width: 15%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer {
+    color: #DF964A;
+    position: fixed;
+    left: 0;
+    bottom: 10px;
+    padding-top: 10px;
+    width: 100%;
+
+    text-align: center;
+}
+
+#product-terr, #product-white, #product-black{
+    width: 25%;
+    margin-left: 80px;
+    float: left;
+    margin-right: 30px;
+}
+
+#child-div {
+    text-align: center;
+    color: #FFF7D3;
+    font-family: Optima;
+    width:97%;
+}
+
+#description{
+    color: #DF964A; 
+    text-align: left;
+}  
+
+button {
+    background-color: #FFF7D3;
+    border: 3px solid #DF964A;
+    color: #DF964A;
+    font-family: Optima;
+}
+
+button:hover, #background{
+    background-color: #DF964A;
+    border: 3px solid #DF964A;
+    color: #FFF7D3;
+    font-family: Optima;
+}
