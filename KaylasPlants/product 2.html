@@ -9,10 +9,11 @@
         <link rel="stylesheet" href="./style.css" type="text/css"/>
         <link rel="icon" type="image/x-icon" href="./favicon.png" />
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script type="text/javascript" src="./product.js"></script>
+        <script type="text/javascript" src="product.js"></script>
     </head>
     <header>
-        <img src="./logo.png" alt="logo" id="logo-img"/>
+            <button class="button" onclick="window.location.href='../src/work.html'">GO BACK</button>
+            <img src="./logo.png" alt="logo" id="logo-img"/>
     </header>
     <body style="background-color:#c4d9bc;">
         <div style="margin-bottom: 10px;">
@@ -63,4 +64,17 @@
     <footer>
         <b>*Part of a CS312 web design project.  Product not actually for sale*</b>
     </footer>
+    <script>
+        $(document).ready(function(){
+            $(".white").click(() => {
+                $(".about").load("plantpot.html #product-white");
+            });
+            $(".black").click(() => {
+                $("#image").load("plantpot.html #product-black");
+            });
+            $(".terracotta").click(() => {
+                $("#image").load("plantpot.html #product-terr");
+            });
+        });
+    </script>
 </html>

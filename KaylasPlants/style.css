@@ -12,8 +12,9 @@ footer {
     bottom: 10px;
     padding-top: 10px;
     width: 100%;
-
+    background-color: var(--light-gray-blue);
     text-align: center;
+    border-top: #FFF7D3 5px solid;
 }
 
 #product-terr, #product-white, #product-black{

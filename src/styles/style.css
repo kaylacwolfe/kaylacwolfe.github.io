@@ -97,6 +97,10 @@ button, input, textarea{
     font-family: 'Courier New', Courier, monospace;
 }
 
+.bar-item:visited{
+    background-color: #CAFFD0;
+}
+
 .button{
     user-select:none;
     border:none;
@@ -155,8 +159,6 @@ button, input, textarea{
     width:auto;
     text-align: center !important;
 }
-
-
 
 .padding-48{
     padding-top: 48px!important;
@@ -282,4 +284,18 @@ button, input, textarea{
 
 .margin-right{
     margin-right: 16px!important;
+}
+
+.course, .course:visited{
+    background-color:#B4A0E5;
+    text-decoration: none;
+    display:inline-block;
+    margin: 3px;
+    color: black;
+}
+
+.course:hover{
+    background-color: #CA3CFF;
+    text-decoration: none;
+    color: white;
 }
