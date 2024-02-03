@@ -137,4 +137,57 @@
                     <br>
                     <h4 class="center" style="background-color: #CA3CFF; color: white;"><strong>Trip Trackeer/Analyzer Application</strong></h4>
                     <p class="center">
-                        I collabo
+                        I collaborated with a team of 3 others, utilizing GitHub and the Scrum process, to develop a Trip
+                        Analyzer Application with a Graphical User Interface. We developed the front-end of the application, 
+                        using JavaScript React, CSS, and HTML, to make the application more user-friendly. For the 
+                        back-end of the project we used Java, a Restful API, and connected to a database that was 
+                        provided to us to access. We would demo the product at the end of every 2-week sprint to a 
+                        stakeholder every two weeks to discuss accomplishments and progress. This was for a Software
+                        Engineering course in the fall semester of 2022 so unfortunately there is no public view of the
+                        site or the code.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <br>
+                    <h4 class="center" style="background-color: #CA3CFF; color: white;"><strong>This Website!</strong></h4>
+                    <p class="center">
+                        The site you are looking at currently. That displays all of my experience
+                        and education related to software engineering, computer science, and tech!
+                    </p>
+                    <a class="button margin-bottom text-center" style="font-size: medium; background-color: #B4A0E5;" href="../index.html">Back to Home</a>
+                    <a class="button margin-bottom text-center" style="font-size: medium; background-color: #B4A0E5;" href="https://github.com/kaylacwolfe/kaylacwolfe.github.io" target="_blank">View Code</a>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="modal animate-opacity">
+            <div class="modal-content" style="padding:32px;">
+                <div class="container white">
+                    <i onclick="closeModal()" class="fa fa-remove transparent button xlarge right"></i>
+                    <h1 class="wide" style="text-align: left;">Contact Me</h1>
+                    <h4>Or you can email me at: <a href = "mailto: kaylacwolfe@icloud.com" class="email">kaylacwolfe@icloud.com</a></h4>
+                    <form onsubmit="sendEmail(); closeModal(); return false;">
+                        <div class="form">
+                            <label for="firstname" required>First Name</label>
+                            <input class="input border" type="text" id="first" placeholder="Jane"/>
+                        </div>
+                        <div class="form">
+                            <label for="lastname">Last Name</label>
+                            <input class="input border" type="text" id="last" placeholder="Doe" required/>
+                        </div>
+                        <br>
+                        <label for="email">E-mail</label>
+                        <input class="input border" type="email" id="email" placeholder="janedoe@example.com" required/>
+                        <label for="message">Message</label>
+                        <textarea class="input border" id="message" placeholder="Write something..." required></textarea>
+                        <br>
+                        <button type="submit" class="button block margin-bottom">Send</button>
+                    </form>
+                    <br>
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>
