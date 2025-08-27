@@ -25,7 +25,6 @@
   <body style="background-color: #C9E4E7;">
     <div class="bar">
         <a href="#" class="bar-item button">Home</a>
-        <a href="#" class="bar-item button" id="btn" onclick="openModal()">Contact</a>
         <a href="./src/work.html" class="bar-item button">Projects</a>
         <a href="./src/education.html" class="bar-item button">Education</a>
         <a href="https://www.linkedin.com/in/kayla-wolfe-1a43ab252/" class="bar-item button right" target="_blank"><i class="fa fa-linkedin"></i></a>
@@ -142,33 +141,6 @@
         </div>
       </div>
     </div>
-      <div id="contact" class="modal animate-opacity">
-        <div class="modal-content" style="padding:32px;">
-          <div class="container white">
-            <i onclick="closeModal()" class="fa fa-remove transparent button xlarge right"></i>
-            <h1 class="wide" style="text-align: left;">Contact Me</h1>
-            <h4>Or you can email me at: <a href = "mailto: kaylacwolfe@icloud.com" class="email">kaylacwolfe@icloud.com</a></h4>
-            <form onsubmit="sendEmail(); closeModal(); return false;">
-              <div class="form">
-                <label for="firstname" required>First Name</label>
-                <input class="input border" type="text" id="first" placeholder="Jane"/>
-              </div>
-              <div class="form">
-                <label for="lastname">Last Name</label>
-                <input class="input border" type="text" id="last" placeholder="Doe" required/>
-              </div>
-              <br>
-              <label for="email">E-mail</label>
-              <input class="input border" type="email" id="email" placeholder="janedoe@example.com" required/>
-              <label for="message">Message</label>
-              <textarea class="input border" id="message" placeholder="Write something..." required></textarea>
-              <br>
-              <button type="submit" class="button block margin-bottom">Send</button>
-            </form>
-            <br>
-          </div>
-        </div>
-      </div>
       <footer class="container-fluid" style="margin-left: 0!important;">
         <a href="#" class="button padding-large margin-bottom"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
       </footer>
